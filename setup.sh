@@ -17,7 +17,7 @@ sudo apt-get install -y python3-pip \
 python3 -m venv env
 source env/bin/activate
 
-pip3 install wheel
+pip3 install wheel pyqtgraph
 
 #######################################
 # if we haven't already, get our submodules
@@ -38,9 +38,10 @@ cd ../../../
 # pyside
 
 cd pyside-setup
-# or be more sophisticated about checking what version of qt was installed above
-git checkout 5.11
+# by default expects 5.11, but we can be more sophisticated w/ qmake --version
 
 python setup.py install
+
+
 
 
