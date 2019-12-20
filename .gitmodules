@@ -1,3 +1,6 @@
 [submodule "mlx90640-library"]
 	path = mlx90640-library
 	url = https://github.com/sneakers-the-rat/mlx90640-library
+[submodule "pyside-setup"]
+	path = pyside-setup
+	url = https://code.qt.io/pyside/pyside-setup
