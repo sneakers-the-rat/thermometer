@@ -4,3 +4,6 @@
 [submodule "pyside-setup"]
 	path = pyside-setup
 	url = https://code.qt.io/pyside/pyside-setup
+[submodule "pyqtgraph"]
+	path = pyqtgraph
+	url = https://github.com/pyqtgraph/pyqtgraph
