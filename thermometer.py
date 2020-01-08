@@ -55,7 +55,7 @@ class Thermometer(QtWidgets.QMainWindow):
 
             #pdb.set_trace()
 
-
+            
             self.frame = np.mean(self.frames, axis=2)
             interp = griddata(self.points, self.frame.flatten(), (self.grid_x, self.grid_y), method='cubic')
             self.img.setImage(interp)
@@ -79,12 +79,15 @@ class Thermometer(QtWidgets.QMainWindow):
                     
             
                 
-            QtCore.QTimer.singleShot(1000.0/self.fps, self.main)
+            
                 # get value of temps within roi
                 # update line plot
                 # update numerical temp
         except KeyboardInterrupt:
             print('quitting!')
+        
+        finally:
+            QtCore.QTimer.singleShot(1000.0/self.fps, self.main)
 
 
 
