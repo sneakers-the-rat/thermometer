@@ -10,6 +10,7 @@ sudo apt-get install -y python3-pip \
   python3-scipy
   qt5-default \
   libqt5xmlpatterns5-dev \
+  libqt5xmlpatterns5 \
   libatlast-base-deb \
   libclang-dev \
   libi2c-dev \
@@ -17,8 +18,8 @@ sudo apt-get install -y python3-pip \
   llvm \
   clang \
   cmake
-  
-  
+
+
 # enable i2c module
 sudo sed -i 's/^#dtparam=i2c_arm=on/dtparam=i2c_arm=on/g' /boot/config.txt
 
